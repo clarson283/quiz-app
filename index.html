@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</head>
+<body>
+
+<div id="resGame">
+	<input type="button" name="retry" value="Restart Game" class="restartGame">
+</div>
+
+
+<div id="head">
+	<h1>BREAKING BAD TRIVIA</h1>
+</div>
+
+
+<div id="q-and-a">
+	<div id="question-section">
+		<span class="question"></span>
+	</div>
+	<div id="answer-section">
+		<input type="radio" name="option" class="option">
+		<span class="answerOne"></span><br><br>
+		<input type="radio" name="option" class="option">
+		<span class="answerTwo"></span><br><br>
+		<input type="radio" name="option" class="option">
+		<span class="answerThree"></span><br><br>
+		<input type="radio" name="option" class="option">
+		<span class="answerFour"></span><br><br>
+	</div>
+	<div id="submit-section">
+		<input type="button" name="submit" value="submit" class="submit">
+	</div>
+</div>
+
+<div id="afterSubmit">
+	<h2 id="result"></h2>
+	<br>
+	<h3 class="correctNumber"><span id="numCorrect"></span> out of 5 correct</h3>
+	<br>
+	<span class="fact"></span>
+	<br>
+	<input type="button" name="submit" value="Skip Question" class="skipQuestion">
+	<br>
+	<input type="button" name="submit" value="Next Question" class="nextQuestion">
+	<br>
+	<h4 class="end-result"></h4>
+</div>
+
+
+</body>
+</html>

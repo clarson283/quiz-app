@@ -1,0 +1,71 @@
+
+body {
+	background: url('images/breaking-bad.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+
+#head {
+	color: black;
+	text-align: center;
+	margin-top: 15px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	height: 50%;
+}
+
+#head h1 {
+	font-family: "Arial Narrow", sans-serif;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+#resGame {
+	float: right;
+}
+
+.skipQuestion, .nextQuestion, .submit, .restartGame {
+	border: 1px solid white;
+	padding: 5px;
+	margin-right: 8px;
+	background-color: white;
+	opacity: 0.7;
+	font-size: 14px;
+	font-family: "Arial Narrow", sans-serif;
+}
+
+#q-and-a {
+	padding-top: 40px;
+	text-align: center;
+	font-family: "Arial Narrow", sans-serif;;
+	color: black;
+}
+
+#question-section {
+	font-size: 20px;
+	padding: 15px;
+}
+
+#answer-section {
+	font-size: 15px;
+}
+
+#answer-section span {
+	padding-bottom: 5px;
+}
+
+#afterSubmit {
+	color: black;
+	font-family: "Arial Narrow", sans-serif;;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.end-result {
+	font-size: 20px;
+	padding-top: 45px;
+}
+
