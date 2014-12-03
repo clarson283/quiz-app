@@ -80,11 +80,23 @@ $(".submit").on("click", function () {
 	} else {
 		checkAnswer();
 		$(".fact").show().text(triviaGame[currentQuestion].fact)
-		$(".end-result").text("You know how they say 'It's been a pleasure'? Well.. it hasn't...");
 		$("#result").show();
 		$("#q-and-a").hide();
 		$(".nextQuestion").hide();
 		$(".skipQuestion").hide();
+		if (numCorrect == 0) { 
+			$('.end-result').text("0 out of 5.. maybe your best course would be to tread lightly..");
+		} else if (numCorrect == 1) { // works
+			$('.end-result').text("1 out of 5.. just because you shot Jesse James doesn't mean you are Jesse James..");
+		} else if (numCorrect == 2) { // works
+			$('.end-result').text("2 out of 5.. you know how they say 'It's been a pleasure'? Well, it hasn't..");
+		} else if (numCorrect == 3) { // works
+			$('.end-result').text("3 out of 5.. you are not the guy. You’re not capable of being the guy. I had a guy, but now I don’t. You are not the guy..");
+		} else if (numCorrect == 4) { // works
+			$('.end-result').text("4 out of 5.. you're not in the meth business. you're in the empire business..");
+		} else {
+			$('.end-result').text("5 out of 5.. you are the danger, you are the one who knocks..");
+		}
 	}
 });
 
